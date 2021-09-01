@@ -1,0 +1,37 @@
+.mainBlock-conteiner{
+    display: flex;
+    justify-content: space-between;
+    background-image:url(/build/images/circles.svg);
+    background-size: contain;
+        .color-text{
+            color: #435FDA;
+            display: block;
+        }
+        .heading-text{
+            color: #171717;
+        }
+    .request-section{
+        width: 658px;
+        margin: 132px 72px 0px 70px;
+        display: block;
+    }    
+    .h1-main{
+        font-size: 58px;
+        font-family: gilroy-bold;
+        line-height: 130%;
+    }
+    .description-text{
+        margin: 30px 0px 50px 0px;
+        font-family: gilroy-normal;
+        font-size: 18px;
+        line-height: 180%;
+        display: block;
+    }
+    .main-frame{
+        margin: 70px 75px 0px 0px; 
+    }
+    .btn-request{
+        width: 252px;
+        height: 80px;
+    }
+}

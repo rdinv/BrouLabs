@@ -1,0 +1,212 @@
+@font-face {
+  font-family: "gilroy-normal";
+  src: url("/fonts/Gilroy/Gilroy-Regular.ttf");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "gilroy-bold";
+  src: url("/fonts/Gilroy/Gilroy-Bold.ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+}
+
+.nav-container {
+  display: flex;
+  height: 130px;
+  justify-content: space-between;
+}
+.nav-container .logo {
+  margin: 41px 0px 50px 100px;
+}
+.nav-container .div-top-hypers {
+  display: flex;
+  margin-right: 112px;
+}
+.nav-container .ul-top-hypers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.nav-container .a-top-hypers {
+  text-decoration: none;
+  color: black;
+  font-family: gilroy-normal;
+  margin: 0px 40px 0px 40px;
+}
+.nav-container .a-top-hypers:hover {
+  color: #96A4F4;
+}
+.nav-container .a-top-hypers:active {
+  border-bottom: 2px solid #4B61C3;
+}
+
+.btn {
+  color: #FFFFFF;
+  font-size: 18px;
+  padding: 21px;
+  border-radius: 10px;
+  background: #4B61C3;
+  border: none;
+  text-decoration: none;
+  width: 168px;
+  height: 60px;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background: #93A3F9;
+  text-decoration: none;
+  background: linear-gradient(0deg, #93A3F9, #93A3F9);
+}
+
+.mainBlock-conteiner {
+  display: flex;
+  justify-content: space-between;
+  background-image: url(/build/images/circles.svg);
+  background-size: contain;
+}
+.mainBlock-conteiner .color-text {
+  color: #435FDA;
+  display: block;
+}
+.mainBlock-conteiner .heading-text {
+  color: #171717;
+}
+.mainBlock-conteiner .request-section {
+  width: 658px;
+  margin: 132px 72px 0px 70px;
+  display: block;
+}
+.mainBlock-conteiner .h1-main {
+  font-size: 58px;
+  font-family: gilroy-bold;
+  line-height: 130%;
+}
+.mainBlock-conteiner .description-text {
+  margin: 30px 0px 50px 0px;
+  font-family: gilroy-normal;
+  font-size: 18px;
+  line-height: 180%;
+  display: block;
+}
+.mainBlock-conteiner .main-frame {
+  margin: 70px 75px 0px 0px;
+}
+.mainBlock-conteiner .btn-request {
+  width: 252px;
+  height: 80px;
+}
+
+.services-container {
+  width: 1440px;
+  margin: auto;
+}
+.services-container .services-line {
+  margin: auto;
+  margin-top: 217px;
+  margin-bottom: 35px;
+  content: "";
+  height: 9px;
+  width: 107px;
+  background: linear-gradient(90deg, rgba(163, 183, 233, 0.35) 2.8%, rgba(255, 203, 204, 0.35) 100%), #FFD7D9;
+}
+.services-container .services-title-text {
+  font-size: 48px;
+  width: 340px;
+  text-align: center;
+  margin: auto;
+}
+.services-container .services-color-text {
+  color: #24285B;
+  font-family: gilroy-bold;
+}
+.services-container .services-heading-text {
+  color: #4E66D2;
+  font-family: gilroy-bold;
+}
+.services-container .services-description-text {
+  font-family: gilroy-normal;
+  font-size: 18px;
+  margin-top: 30px;
+  display: block;
+  margin-bottom: 80px;
+}
+
+.services-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services-card {
+  width: 400px;
+  height: 430px;
+  margin-bottom: 70px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 70px rgba(172, 185, 192, 0.25);
+  border-radius: 50px;
+}
+
+.services-card-icon {
+  margin: 70px 0px 30px 75px;
+}
+
+.services-card-title {
+  font-family: gilroy-bold;
+  font-size: 22px;
+  line-height: 150%;
+  margin: 0px 75px 20px 75px;
+}
+
+.services-card-description {
+  font-family: gilroy-normal;
+  font-size: 14px;
+  line-height: 150%;
+  margin: 0px 75px 0px 75px;
+}
+
+.services-card-callToAction {
+  background: #7581CD;
+}
+
+.callToAction-question {
+  margin: 95px 98px 40px 82px;
+}
+
+.services-card-color-white {
+  font-family: gilroy-bold;
+  color: #FFFFFF;
+  font-size: 36px;
+  line-height: 120%;
+}
+
+.services-card-color {
+  font-family: gilroy-bold;
+  color: #FDDBDC;
+  font-size: 36px;
+  line-height: 120%;
+}
+
+.btn-contactUs-white {
+  font-family: gilroy-bold;
+  color: #212121;
+  font-size: 18px;
+  padding: 21px;
+  border-radius: 10px;
+  background: #FFFFFF;
+  border: none;
+  text-decoration: none;
+  width: 168px;
+  height: 60px;
+  font-size: 18px;
+  margin-left: 82px;
+}

@@ -1,0 +1,96 @@
+.services-container{
+    width: 1440px;
+    margin: auto;
+    .services-line{
+        margin: auto;
+        margin-top: 217px;
+        margin-bottom: 35px;
+        content: "";
+        height: 9px;
+        width: 107px;
+        background: linear-gradient(90deg, rgba(163, 183, 233, 0.35) 2.8%, rgba(255, 203, 204, 0.35) 100%), #FFD7D9;
+    }
+    .services-title-text{
+        font-size: 48px;
+        width: 340px;
+        text-align: center;
+        margin: auto;
+    }
+    .services-color-text{
+        color: #24285B;
+        font-family: gilroy-bold;
+    }
+    .services-heading-text{
+        color: #4E66D2;
+        font-family: gilroy-bold;
+    }
+    .services-description-text{
+        font-family: gilroy-normal;
+        font-size: 18px;
+        margin-top: 30px;
+        display: block;
+        margin-bottom: 80px;
+    }
+}
+
+
+.services-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.services-card{
+    width: 400px;
+    height: 430px;
+    margin-bottom: 70px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 70px rgba(172, 185, 192, 0.25);
+    border-radius: 50px;
+}
+.services-card-icon{
+    margin: 70px 0px 30px 75px;
+}
+.services-card-title{
+    font-family: gilroy-bold;
+    font-size: 22px;
+    line-height: 150%;
+    margin: 0px 75px 20px 75px;
+}
+.services-card-description{
+    font-family: gilroy-normal;
+    font-size: 14px;
+    line-height: 150%;
+    margin: 0px 75px 0px 75px;
+}
+.services-card-callToAction{
+    background: #7581CD;
+}
+.callToAction-question{
+    margin: 95px 98px 40px 82px;
+}
+.services-card-color-white{
+    font-family: gilroy-bold;
+    color: #FFFFFF;
+    font-size: 36px;
+    line-height: 120%;
+}
+.services-card-color{
+    font-family: gilroy-bold;
+    color: #FDDBDC;
+    font-size: 36px;
+    line-height: 120%;
+}
+.btn-contactUs-white{
+    font-family: gilroy-bold;
+    color: #212121;
+    font-size: 18px;
+    padding: 21px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    border: none;
+    text-decoration: none;
+    width: 168px;
+    height: 60px;
+    font-size: 18px;
+    margin-left: 82px;
+}
