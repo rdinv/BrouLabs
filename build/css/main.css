@@ -1,12 +1,12 @@
 @font-face {
   font-family: "gilroy-normal";
-  src: url("/fonts/Gilroy/Gilroy-Regular.ttf");
+  src: url("../../fonts/Gilroy/Gilroy-Regular.ttf");
   font-weight: 600;
   font-style: normal;
 }
 @font-face {
   font-family: "gilroy-bold";
-  src: url("/fonts/Gilroy/Gilroy-Bold.ttf");
+  src: url("../../fonts/Gilroy/Gilroy-Bold.ttf");
   font-weight: 800;
   font-style: normal;
 }
@@ -71,7 +71,7 @@ body {
 .mainBlock-conteiner {
   display: flex;
   justify-content: space-between;
-  background-image: url(/build/images/circles.svg);
+  background-image: url(../images/circles.svg);
   background-size: contain;
 }
 .mainBlock-conteiner .color-text {
