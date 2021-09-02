@@ -1,8 +1,10 @@
 .lock{
+    margin-top: 22px;
     display: flex;
     position: relative;
     justify-content: center;
-    background-image: url(../images/circles.svg);
+    background-image: url(../images/circles-lock.svg);
+    background-size: contain;
     .rectangle{
         position: absolute;
         left: 0px;

@@ -221,10 +221,12 @@ body {
 }
 
 .lock {
+  margin-top: 22px;
   display: flex;
   position: relative;
   justify-content: center;
-  background-image: url(../images/circles.svg);
+  background-image: url(../images/circles-lock.svg);
+  background-size: contain;
 }
 .lock .rectangle {
   position: absolute;
@@ -235,4 +237,48 @@ body {
   left: 93.5%;
   top: -320px;
   transform: rotate(180deg);
+}
+
+.team-container {
+  display: flex;
+  justify-content: space-around;
+  height: 1000px;
+  margin: auto;
+  margin-top: 50px;
+  background: linear-gradient(90deg, rgba(163, 183, 233, 0.35) 2.8%, rgba(255, 203, 204, 0.35) 100%), #4B61C3;
+  border-radius: 100px;
+  width: 93%;
+}
+.team-container .team-info {
+  padding: 178px 0px 0px 195px;
+  width: 669px;
+}
+.team-container .team-info .team-line {
+  margin-bottom: 36px;
+  content: "";
+  height: 9px;
+  width: 107px;
+  background: linear-gradient(90deg, rgba(163, 183, 233, 0.35) 2.8%, rgba(255, 203, 204, 0.35) 100%), #FFD7D9;
+}
+.team-container .team-info .team-title, .team-container .team-info .team-name {
+  font-size: 48px;
+  line-height: 125%;
+  font-family: gilroy-bold;
+  color: #FFFFFF;
+}
+.team-container .team-info .team-title {
+  margin-bottom: 130px;
+}
+.team-container .team-info .team-name {
+  margin-bottom: 30px;
+}
+.team-container .team-info .team-description {
+  font-size: 18px;
+  line-height: 165%;
+  font-family: gilroy-normal;
+  color: #FFFFFF;
+  margin-bottom: 80px;
+}
+.team-container .team-image {
+  padding-top: 178px;
 }
