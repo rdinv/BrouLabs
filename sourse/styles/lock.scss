@@ -1,0 +1,16 @@
+.lock{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-image: url(../images/circles.svg);
+    .rectangle{
+        position: absolute;
+        left: 0px;
+    }
+    .rectangle-left{
+        position: absolute;
+        left: 93.5%;
+        top: -320px;
+        transform: rotate(180deg);
+    }
+}

@@ -70,9 +70,13 @@ body {
 
 .mainBlock-conteiner {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background-image: url(../images/circles.svg);
   background-size: contain;
+}
+.mainBlock-conteiner .rectangle {
+  position: absolute;
+  left: 0px;
 }
 .mainBlock-conteiner .color-text {
   color: #435FDA;
@@ -82,8 +86,8 @@ body {
   color: #171717;
 }
 .mainBlock-conteiner .request-section {
-  width: 658px;
-  margin: 132px 72px 0px 70px;
+  width: 669px;
+  margin: 132px 95px 0px 200px;
   display: block;
 }
 .mainBlock-conteiner .h1-main {
@@ -109,6 +113,11 @@ body {
 .services-container {
   width: 1440px;
   margin: auto;
+}
+.services-container .rectangle {
+  position: absolute;
+  left: 93.5%;
+  transform: rotate(180deg);
 }
 .services-container .services-line {
   margin: auto;
@@ -209,4 +218,21 @@ body {
   height: 60px;
   font-size: 18px;
   margin-left: 82px;
+}
+
+.lock {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background-image: url(../images/circles.svg);
+}
+.lock .rectangle {
+  position: absolute;
+  left: 0px;
+}
+.lock .rectangle-left {
+  position: absolute;
+  left: 93.5%;
+  top: -320px;
+  transform: rotate(180deg);
 }

@@ -1,6 +1,11 @@
 .services-container{
     width: 1440px;
     margin: auto;
+    .rectangle{
+        position: absolute;
+        left: 93.5%;
+        transform: rotate(180deg);
+    }
     .services-line{
         margin: auto;
         margin-top: 217px;
@@ -32,8 +37,6 @@
         margin-bottom: 80px;
     }
 }
-
-
 .services-cards{
     display: flex;
     flex-wrap: wrap;
