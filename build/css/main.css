@@ -282,3 +282,58 @@ body {
 .team-container .team-image {
   padding-top: 178px;
 }
+
+.customers-container {
+  display: flex;
+  padding-top: 130px;
+}
+.customers-container .customers-ourCustomers {
+  width: 540px;
+}
+.customers-container .customers-line {
+  margin: 0px 0px 35px 200px;
+  content: "";
+  height: 9px;
+  width: 107px;
+  background: linear-gradient(90deg, rgba(163, 183, 233, 0.35) 2.8%, rgba(255, 203, 204, 0.35) 100%), #FFD7D9;
+}
+.customers-container .customers-info {
+  margin-left: 200px;
+}
+.customers-container .customers-color-text {
+  color: #24285B;
+  font-family: gilroy-bold;
+}
+.customers-container .customers-heading-text {
+  color: #4E66D2;
+  font-family: gilroy-bold;
+}
+.customers-container .customers-title {
+  font-size: 48px;
+  text-align: center;
+  margin: auto;
+}
+.customers-container .customers-description {
+  font-family: gilroy-normal;
+  font-size: 18px;
+  margin-top: 30px;
+  display: block;
+  margin-bottom: 80px;
+}
+.customers-container .customers-frame {
+  margin: 92px 0px 0px 110px;
+}
+
+.customers-logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  align-content: center;
+  padding-left: 200px;
+}
+
+.customers-logo-item {
+  width: 240px;
+  height: 200px;
+}
