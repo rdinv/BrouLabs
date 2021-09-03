@@ -1,6 +1,7 @@
 .customers-container{
     display: flex;
     padding-top: 130px;
+    justify-content: space-between;
     .customers-ourCustomers{
         width: 540px;
     }
@@ -41,21 +42,15 @@
 
 //grid add need
 .customers-logo{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
-    align-content: center;
-    padding-left: 200px;
+    display: grid;
+    padding-right: 90px;
+    padding-top: 200px;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
 }
 .customers-logo-item{
-    width: 240px;
+    display: flex;
+    align-items: center;
     height: 200px;
 }
-
-
-
-
-
-
-        

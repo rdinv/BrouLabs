@@ -116,7 +116,7 @@ body {
 }
 .services-container .rectangle {
   position: absolute;
-  left: 93.5%;
+  right: 0px;
   transform: rotate(180deg);
 }
 .services-container .services-line {
@@ -234,7 +234,7 @@ body {
 }
 .lock .rectangle-left {
   position: absolute;
-  left: 93.5%;
+  right: 0;
   top: -320px;
   transform: rotate(180deg);
 }
@@ -286,6 +286,7 @@ body {
 .customers-container {
   display: flex;
   padding-top: 130px;
+  justify-content: space-between;
 }
 .customers-container .customers-ourCustomers {
   width: 540px;
@@ -325,15 +326,16 @@ body {
 }
 
 .customers-logo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: center;
-  align-content: center;
-  padding-left: 200px;
+  display: grid;
+  padding-right: 90px;
+  padding-top: 200px;
+  height: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .customers-logo-item {
-  width: 240px;
+  display: flex;
+  align-items: center;
   height: 200px;
 }
