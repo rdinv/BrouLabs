@@ -339,3 +339,86 @@ body {
   align-items: center;
   height: 200px;
 }
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+}
+.contact-container .rectangle {
+  position: absolute;
+  margin-top: 158px;
+}
+.contact-container .contact-info {
+  margin-left: 200px;
+}
+.contact-container .contact-contactUs {
+  margin-top: 200px;
+  width: 540px;
+}
+.contact-container .contact-line {
+  margin-bottom: 35px;
+  content: "";
+  height: 9px;
+  width: 107px;
+  background: linear-gradient(90deg, rgba(163, 183, 233, 0.35) 2.8%, rgba(255, 203, 204, 0.35) 100%), #FFD7D9;
+}
+.contact-container .contact-title {
+  font-size: 48px;
+}
+.contact-container .contact-color-text {
+  color: #24285B;
+  font-family: gilroy-bold;
+}
+.contact-container .contact-heading-text {
+  color: #4E66D2;
+  font-family: gilroy-bold;
+}
+.contact-container .contact-description {
+  font-family: gilroy-normal;
+  font-size: 18px;
+  margin-top: 30px;
+  display: block;
+  margin-bottom: 35px;
+}
+.contact-container .contact-email {
+  margin-bottom: 35px;
+}
+.contact-container .mail-text {
+  color: #4E66D2;
+  font-family: gilroy-bold;
+  font-size: 20px;
+}
+.contact-container .mail-contact {
+  color: #24285B;
+  font-family: gilroy-normal;
+  font-size: 18px;
+}
+.contact-container .contact-map {
+  position: relative;
+}
+.contact-container .contact-icon {
+  position: absolute;
+  margin-bottom: 350px;
+  bottom: 0px;
+  margin-left: 530px;
+}
+
+.footer-nav {
+  display: flex;
+  font-family: gilroy-normal;
+  font-size: 18px;
+  line-height: 125%;
+  width: 100%;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 70px;
+  padding: 0px 95px 0px 200px;
+}
+
+.footer-policy {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+}
