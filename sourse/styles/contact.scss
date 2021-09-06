@@ -1,8 +1,9 @@
 .contact-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     position: relative;
+    overflow: hidden;
     .rectangle{
         position: absolute;
         margin-top: 158px;
@@ -78,4 +79,19 @@
     display: flex;
     justify-content: space-between;
     width: 500px;
+}
+
+
+@media (max-width: 1680px){
+    .contact-container{
+        .contact-info{
+            margin-left: 150px;
+        }
+        .contact-title {
+            width: 340px;
+        }
+    }
+    .footer-nav{
+        padding: 0px 95px 0px 50px;
+    }
 }

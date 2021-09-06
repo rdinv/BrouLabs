@@ -25,7 +25,6 @@
     }
     .customers-title{
         font-size: 48px;
-        text-align: center;
         margin: auto;
     }
     .customers-description{
@@ -39,8 +38,6 @@
         margin: 92px 0px 0px 110px;
     }
 }
-
-//grid add need
 .customers-logo{
     display: grid;
     padding-right: 90px;
@@ -50,7 +47,31 @@
     grid-template-rows: 1fr 1fr 1fr;
 }
 .customers-logo-item{
-    display: flex;
     align-items: center;
     height: 200px;
+}
+@media (max-width: 1680px){
+    .customers-container{
+        .customers-line{
+            margin: 0px 0px 35px 150px;
+        }
+        .customers-info{
+            margin-left: 150px;
+        }
+        .customers-frame{
+            margin: 73px 0px 0px 50px;
+            width: 474px;
+        }
+        .customers-frame>img{
+            width: 474px;
+        }
+    }
+    .customers-logo{
+        padding-right: 90px;
+        padding-top: 130px;
+    }
+    .customers-logo-item{
+        width: 180px;
+        height: 175px;
+    }
 }

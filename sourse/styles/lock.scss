@@ -15,4 +15,26 @@
         top: -320px;
         transform: rotate(180deg);
     }
+    .lock-img-1440{
+        display: none;
+    }
+}
+
+@media (max-width: 1440px){
+    .lock{
+        .rectangle{
+            display: none;
+        }
+        .rectangle-left{
+            display: none;
+        }
+        .lock-img{
+            display: none;
+        }
+        .lock-img-1440{
+            display: block;
+            width: 100%;
+            max-width: 1000px;
+        }
+    }
 }

@@ -1,6 +1,7 @@
 .mainBlock-conteiner{
-    display: flex;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
     background-image:url(../images/circles.svg);
     background-size: contain;
         .rectangle{
@@ -15,8 +16,12 @@
             color: #171717;
         }
     .request-section{
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        z-index: 2;
         width: 669px;
-        margin: 132px 95px 0px 200px;
+        margin: 132px 0px 0px 200px;
         display: block;
     }    
     .h1-main{
@@ -31,11 +36,41 @@
         line-height: 180%;
         display: block;
     }
-    .main-frame{
-        margin: 70px 75px 0px 0px;
+    .mainBlockImg{
+        padding-top: 50px;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        background-image: url('/images/mainFrame.svg');
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 1;
     }
     .btn-request{
         width: 252px;
         height: 80px;
+    }
+}
+@media (max-width: 1580px){
+    .main-frame{
+        width: 850px;
+    }
+}
+@media (max-width: 1440px){
+    .mainBlock-conteiner{
+        .request-section{
+            margin: 122px 0px 0px 150px;
+        }
+        .h1-main{
+            font-size: 48px;
+            width: 515px;
+        }
+        .description-text{
+            font-size: 18px;
+            width: 535px;
+        }
+        .main-frame{
+            width: 815px;
+        }
     }
 }

@@ -41,3 +41,17 @@
         padding-top: 178px;
     }
 }
+@media (max-width: 1440px){
+    .team-container{
+        height: 900px;
+        .team-description{
+            width: 447px;
+        }
+        .team-info{
+            padding: 153px 0px 0px 95px;
+        }
+        .team-image{
+            padding: 140px 106px 0px 0px;
+        }
+    }
+}
