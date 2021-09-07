@@ -18,6 +18,10 @@ body {
   margin: 0 auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .nav-container {
   display: flex;
   height: 130px;
@@ -144,8 +148,7 @@ body {
   }
 }
 .services-container {
-  width: 1440px;
-  margin: auto;
+  margin: 0px 260px 0px 260px;
 }
 .services-container .rectangle {
   position: absolute;
@@ -184,9 +187,10 @@ body {
 }
 
 .services-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
 }
 
 .services-card {
@@ -253,9 +257,17 @@ body {
   margin-left: 82px;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1800px) {
   .services-container {
-    width: 1340px;
+    margin: 0px 50px 0px 50px;
+  }
+}
+@media (max-width: 1419px) {
+  .services-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
   }
 }
 .lock {
@@ -407,6 +419,8 @@ body {
 .customers-logo-item {
   align-items: center;
   height: 200px;
+  display: flex;
+  justify-content: center;
 }
 
 @media (max-width: 1680px) {
@@ -432,6 +446,64 @@ body {
   .customers-logo-item {
     width: 180px;
     height: 175px;
+  }
+}
+@media (max-width: 1360px) {
+  .customers-container .customers-line {
+    margin: 0px 0px 30px 100px;
+  }
+  .customers-container .customers-info {
+    margin-left: 100px;
+  }
+  .customers-container .customers-frame {
+    margin: 80px 0px 0px 50px;
+    width: 360px;
+  }
+  .customers-container .customers-frame > img {
+    width: 360px;
+  }
+
+  .customers-logo {
+    display: grid;
+    padding-top: 0px;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  .customers-logo-item {
+    width: 195px;
+    height: 140px;
+  }
+}
+@media (max-width: 1110px) {
+  .customers-container .customers-line {
+    margin: 0px 0px 30px 100px;
+  }
+  .customers-container .customers-info {
+    margin-left: 100px;
+    width: 340px;
+  }
+  .customers-container .customers-frame {
+    margin: 80px 0px 0px 50px;
+    width: 360px;
+  }
+  .customers-container .customers-frame > img {
+    width: 360px;
+  }
+
+  .customers-logo {
+    display: grid;
+    padding-top: 53px;
+    padding-right: 33px;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  .customers-logo-item {
+    width: 180px;
+    height: 130px;
   }
 }
 .contact-container {

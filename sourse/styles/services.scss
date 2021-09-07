@@ -1,6 +1,5 @@
 .services-container{
-    width: 1440px;
-    margin: auto;
+    margin: 0px 260px 0px 260px;
     .rectangle{
         position: absolute;
         right: 0px;
@@ -38,9 +37,10 @@
     }
 }
 .services-cards{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
 }
 .services-card{
     width: 400px;
@@ -97,8 +97,16 @@
     font-size: 18px;
     margin-left: 82px;
 }
-@media (max-width: 1440px){
+@media (max-width: 1800px){
     .services-container{
-        width: 1340px;
+        margin: 0px 50px 0px 50px;
+    }
+}
+@media (max-width: 1419px){
+    .services-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: center;
     }
 }
