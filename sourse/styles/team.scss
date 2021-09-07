@@ -55,3 +55,41 @@
         }
     }
 }
+
+
+@media (max-width: 1200px){
+    .team-container{
+        height: 726px;
+        .team-description{
+            width: 447px;
+        }
+        .team-info{
+            padding: 100px 0px 0px 95px;
+            width: 669px;
+            .team-line{
+                margin-bottom: 30px;
+                content: "";
+                height: 9px;
+                width: 107px;
+                background: linear-gradient(90deg, rgba(163, 183, 233, 0.35) 2.8%, rgba(255, 203, 204, 0.35) 100%), #FFD7D9;
+            }
+            .team-title, .team-name{
+                font-size: 36px;
+                line-height: 125%;
+                font-family: gilroy-bold;
+                color: #FFFFFF;
+            }
+            .team-description{
+                font-size: 16px;
+                margin-bottom: 75px;
+                width: 310px;
+            }
+        }
+        .team-image{
+            padding: 106px 60px 0px 0px;
+        }
+        .team-image-photo{
+            width: 420px;
+        }
+    }
+}

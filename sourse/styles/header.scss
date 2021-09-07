@@ -8,7 +8,8 @@
     }
     .div-top-hypers {
         display:flex;
-        margin-right: 112px; 
+        margin-right: 112px;
+        align-items: center;
     }
         .ul-top-hypers{
             display: flex;
@@ -41,9 +42,29 @@
     width: 168px;
     height: 60px;
     font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .btn:hover{
     background: #93A3F9;
     text-decoration: none;
     background: linear-gradient(0deg, #93A3F9, #93A3F9);
+}
+
+@media (max-width: 1180px){
+    .nav-container{
+        .logo{
+            margin: 41px 0px 50px 50px;
+        }
+        .div-top-hypers {
+            margin-right: 30px; 
+        }
+        .a-top-hypers{
+            margin: 20px;
+        }
+        .ul-top-hypers{
+            padding-right: 10px;
+        }
+    }
 }

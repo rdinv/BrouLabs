@@ -74,3 +74,37 @@
         }
     }
 }
+@media (max-width: 1280px){
+    .mainBlock-conteiner{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        .request-section{
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 1;
+            display: block;
+            margin: auto;
+        }
+        .h1-main{
+            width: 100%;
+            text-align: center;
+        }
+        .description-text{
+            margin: auto;
+            margin-bottom: 30px;
+            width: 540px;
+        }
+        .mainBlockImg{
+            padding-top: 50px;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            margin: auto;
+        }
+        .main-frame{
+            max-width: 700px;
+        }
+        .btn-request{
+            margin: auto;
+        } 
+    }
+}
