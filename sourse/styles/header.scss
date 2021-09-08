@@ -5,7 +5,6 @@
     margin: 52px 112px 0px 100px;
     .div-top-hypers {
         display:flex;
-        margin-right: 112px;
         align-items: center;
     }
         .ul-top-hypers{
@@ -71,9 +70,6 @@
     .nav-container{
         height: auto;
         margin: 20px 23px 0px 22px;
-        .burger-menu{
-            display: block;
-        }
         .div-top-hypers {
             display: none;
         }
@@ -128,5 +124,8 @@
             transform: rotate(-45deg) translate(35px, 35px);
             width: 24px;
         }
-    }  
+        .burger-menu{
+            display: block;
+        } 
+    }
 }

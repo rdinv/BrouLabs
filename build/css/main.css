@@ -30,7 +30,6 @@ html {
 }
 .nav-container .div-top-hypers {
   display: flex;
-  margin-right: 112px;
   align-items: center;
 }
 .nav-container .ul-top-hypers {
@@ -96,9 +95,6 @@ html {
     height: auto;
     margin: 20px 23px 0px 22px;
   }
-  .nav-container .burger-menu {
-    display: block;
-  }
   .nav-container .div-top-hypers {
     display: none;
   }
@@ -152,6 +148,9 @@ html {
   .nav-container .burger-menu__btn.open .burger-menu__btn-inner::after {
     transform: rotate(-45deg) translate(35px, 35px);
     width: 24px;
+  }
+  .nav-container .burger-menu {
+    display: block;
   }
 }
 .mainBlock-conteiner {
