@@ -24,11 +24,9 @@ html {
 
 .nav-container {
   display: flex;
-  height: 130px;
   justify-content: space-between;
-}
-.nav-container .logo {
-  margin: 41px 0px 50px 100px;
+  align-items: center;
+  margin: 52px 112px 0px 100px;
 }
 .nav-container .div-top-hypers {
   display: flex;
@@ -52,6 +50,9 @@ html {
 }
 .nav-container .a-top-hypers:active {
   border-bottom: 2px solid #4B61C3;
+}
+.nav-container .burger-menu {
+  display: none;
 }
 
 .btn {
@@ -77,8 +78,8 @@ html {
 }
 
 @media (max-width: 1200px) {
-  .nav-container .logo {
-    margin: 41px 0px 50px 50px;
+  .nav-container {
+    margin: 52px 31px 0px 60px;
   }
   .nav-container .div-top-hypers {
     margin-right: 30px;
@@ -88,6 +89,69 @@ html {
   }
   .nav-container .ul-top-hypers {
     padding-right: 10px;
+  }
+}
+@media (max-width: 960px) {
+  .nav-container {
+    height: auto;
+    margin: 20px 23px 0px 22px;
+  }
+  .nav-container .burger-menu {
+    display: block;
+  }
+  .nav-container .div-top-hypers {
+    display: none;
+  }
+  .nav-container .ul-top-hypers {
+    display: none;
+  }
+  .nav-container .burger-menu__btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  .nav-container .burger-menu__btn-inner {
+    display: flex;
+    justify-content: flex-end;
+    width: 24px;
+    height: 2px;
+    background: #24285B;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+  }
+  .nav-container .burger-menu__btn-inner::before,
+.nav-container .burger-menu__btn-inner::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 2px;
+    background: #24285B;
+    border-radius: 2px;
+    transition: all 0.3s ease-in-out;
+  }
+  .nav-container .burger-menu__btn-inner::before {
+    transform: translateY(-4px);
+  }
+  .nav-container .burger-menu__btn-inner::after {
+    transform: translateY(4px);
+  }
+  .nav-container .burger-menu__btn.open .burger-menu__btn-inner {
+    transform: translateX(-50px);
+    background: transparent;
+    box-shadow: none;
+  }
+  .nav-container .burger-menu__btn.open .burger-menu__btn-inner::before {
+    transform: rotate(45deg) translate(35px, -35px);
+    width: 24px;
+  }
+  .nav-container .burger-menu__btn.open .burger-menu__btn-inner::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+    width: 24px;
   }
 }
 .mainBlock-conteiner {

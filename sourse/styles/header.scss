@@ -1,11 +1,8 @@
 .nav-container{
     display: flex;
-    height: 130px;
     justify-content: space-between;
-    
-    .logo{
-        margin: 41px 0px 50px 100px;
-    }
+    align-items: center;
+    margin: 52px 112px 0px 100px;
     .div-top-hypers {
         display:flex;
         margin-right: 112px;
@@ -30,6 +27,9 @@
                 border-bottom: 2px solid #4B61C3;
                 ;
             }
+            .burger-menu{
+                display: none;
+            }
 }
 .btn{
     color: #FFFFFF;
@@ -52,11 +52,10 @@
     background: linear-gradient(0deg, #93A3F9, #93A3F9);
 }
 
+
 @media (max-width: 1200px){
     .nav-container{
-        .logo{
-            margin: 41px 0px 50px 50px;
-        }
+        margin: 52px 31px 0px 60px;
         .div-top-hypers {
             margin-right: 30px; 
         }
@@ -67,4 +66,67 @@
             padding-right: 10px;
         }
     }
+}
+@media (max-width: 960px){
+    .nav-container{
+        height: auto;
+        margin: 20px 23px 0px 22px;
+        .burger-menu{
+            display: block;
+        }
+        .div-top-hypers {
+            display: none;
+        }
+        .ul-top-hypers{
+            display: none;
+        }
+        .burger-menu__btn{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 24px;
+            height: 14px;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+        }
+        .burger-menu__btn-inner{
+            display: flex;
+            justify-content: flex-end;
+            width: 24px;
+            height: 2px;
+            background: #24285B;
+            border-radius: 2px;
+            transition: all .3s ease-in-out;
+        }
+        .burger-menu__btn-inner::before,
+        .burger-menu__btn-inner::after{
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 2px;
+            background: #24285B;
+            border-radius: 2px;
+            transition: all .3s ease-in-out;
+        }
+        .burger-menu__btn-inner::before{
+            transform: translateY(-4px);
+        }
+        .burger-menu__btn-inner::after{
+            transform: translateY(4px);
+        }
+        .burger-menu__btn.open .burger-menu__btn-inner{
+            transform: translateX(-50px);
+            background: transparent;
+            box-shadow: none;
+        }
+        .burger-menu__btn.open .burger-menu__btn-inner::before{
+            transform: rotate(45deg) translate(35px, -35px);
+            width: 24px;
+        }
+        .burger-menu__btn.open .burger-menu__btn-inner::after{
+            transform: rotate(-45deg) translate(35px, 35px);
+            width: 24px;
+        }
+    }  
 }
