@@ -617,6 +617,46 @@ html {
     width: 420px;
   }
 }
+@media (max-width: 890px) {
+  .team-container {
+    display: grid;
+    height: 760px;
+    border-radius: 35px;
+  }
+  .team-container .team-description {
+    width: 266px;
+  }
+  .team-container .team-info {
+    padding: 50px 0px 0px 30px;
+    width: 100%;
+  }
+  .team-container .team-info .team-line {
+    content: "";
+    height: 4px;
+    width: 50px;
+    background: linear-gradient(90deg, rgba(163, 183, 233, 0.35) 2.8%, rgba(255, 203, 204, 0.35) 100%), #FFD7D9;
+  }
+  .team-container .team-info .team-title, .team-container .team-info .team-name {
+    font-size: 28px;
+  }
+  .team-container .team-info .team-title {
+    margin-bottom: 23px;
+  }
+  .team-container .team-info .team-name {
+    margin-bottom: 20px;
+  }
+  .team-container .team-info .team-description {
+    font-size: 14px;
+    margin-bottom: 40px;
+    width: 266px;
+  }
+  .team-container .team-image {
+    padding: 23px 50px 0px 40px;
+  }
+  .team-container .team-image-photo {
+    width: 260px;
+  }
+}
 .customers-container {
   display: flex;
   padding-top: 130px;
@@ -863,5 +903,69 @@ html {
 
   .footer-nav {
     padding: 0px 95px 0px 50px;
+  }
+}
+@media (max-width: 950px) {
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-container .rectangle {
+    display: none;
+  }
+  .contact-container .contact-info {
+    margin-left: 150px;
+  }
+  .contact-container .contact-title {
+    width: 340px;
+  }
+  .contact-container .contact-info {
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .contact-container .contact-contactUs {
+    margin-top: 50px;
+    width: 540px;
+  }
+  .contact-container .contact-line {
+    margin-bottom: 20px;
+    height: 4px;
+    width: 50px;
+  }
+  .contact-container .contact-title {
+    font-size: 28px;
+    text-align: center;
+  }
+  .contact-container .contact-description {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 260px;
+  }
+  .contact-container .contact-email {
+    margin-bottom: 35px;
+  }
+  .contact-container .contact-map {
+    position: relative;
+  }
+  .contact-container .contact-icon {
+    position: absolute;
+    margin-bottom: 350px;
+    bottom: 0px;
+    padding-left: 50%;
+  }
+
+  .footer-policy {
+    display: none;
+  }
+
+  .footer-nav {
+    font-size: 14px;
+    justify-content: center;
+    padding: 0px;
   }
 }
