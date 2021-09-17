@@ -1,9 +1,8 @@
 .mobMenu-conteiner{
-    display: block;
+    display: none;
 }
 @media (max-width: 960px){
     .mobMenu-conteiner.open{
-        display: block;
         display: block;
     }
     .mobMenu-conteiner{
@@ -19,7 +18,6 @@
         padding: 120px 0px 0px 0px;
         height: 100vh;
         background-color: #fff;
-        opacity: 0;
         .mob-hypers {
             display:flex;
             align-items: center;
