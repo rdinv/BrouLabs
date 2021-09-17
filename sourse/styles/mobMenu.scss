@@ -1,0 +1,80 @@
+.mobMenu-conteiner{
+    display: block;
+}
+@media (max-width: 960px){
+    .mobMenu-conteiner.open{
+        display: block;
+        display: block;
+    }
+    .mobMenu-conteiner{
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        z-index: 2;
+        padding: 120px 0px 0px 0px;
+        height: 100vh;
+        background-color: #fff;
+        opacity: 0;
+        .mob-hypers {
+            display:flex;
+            align-items: center;
+            padding-left: 30px;
+        }
+            .ul-mob-hypers{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-items: flex-start;
+                list-style: none;
+                flex-direction: column;
+            }
+            .ul-mob-hypers>li{
+                margin-bottom: 40px;
+            }
+                .a-mob-hypers{
+                    text-decoration: none;
+                    color: black;
+                    font-family: gilroy-bold;
+                    font-size: 20px;
+                    color: #24285B;
+                }
+                .a-mob-hypers:hover{
+                    color: #96A4F4;
+                }
+                .a-top-hypers:active{
+                    border-bottom: 2px solid #4B61C3;
+                }
+        .mob-policy{
+            border-top: 2px solid rgba(186, 194, 232, 0.2);;
+            padding: 50px 0px 0px 30px;
+        }
+        .ul-mob-policy{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            list-style: none;
+            flex-direction: column;
+        }
+        .ul-mob-policy>li{
+            padding-bottom: 24px;
+        }
+        .a-mob-policy{
+            text-decoration: none;
+            color: black;
+            font-family: gilroy-bold;
+            font-size: 20px;
+            color: #24285B;
+        }
+        .a-mob-policy:hover{
+            color: #96A4F4;
+        }
+        .a-mob-policy:active{
+            border-bottom: 2px solid #4B61C3;
+        }
+    }
+}

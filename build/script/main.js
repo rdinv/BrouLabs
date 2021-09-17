@@ -9,3 +9,17 @@ burgerBtn.addEventListener('click',()=>{
         menuOpen = false;
     }
 });
+
+
+
+const mobMenu = document.querySelector('.mobMenu-conteiner');
+let mobMenuOpen = false;
+burgerBtn.addEventListener('click',()=>{
+    if(!mobMenuOpen){
+        mobMenu.classList.add('open');
+        mobMenuOpen = true;
+    }else{
+        mobMenu.classList.remove('open');
+        mobMenuOpen = false;
+    }
+});

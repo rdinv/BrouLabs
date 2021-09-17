@@ -3,6 +3,9 @@
     justify-content: space-between;
     align-items: center;
     margin: 52px 112px 0px 100px;
+    .logo{
+        z-index: 3;
+    }
     .div-top-hypers {
         display:flex;
         align-items: center;
@@ -28,6 +31,7 @@
             }
             .burger-menu{
                 display: none;
+                z-index: 3;
             }
 }
 .btn{
@@ -70,6 +74,11 @@
     .nav-container{
         height: auto;
         margin: 20px 23px 0px 22px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 3;
         .div-top-hypers {
             display: none;
         }
