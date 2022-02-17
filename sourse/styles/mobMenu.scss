@@ -1,12 +1,19 @@
-.mobMenu-conteiner{
-    display: none;
-}
-@media (max-width: 960px){
-    .mobMenu-conteiner.open{
-        display: block;
-    }
+@media (min-width: 960px){
     .mobMenu-conteiner{
         display: none;
+    }
+}
+@media (max-width: 960px){
+    
+    .mobMenu-conteiner.open{
+        opacity: 1;
+        transition: .5s;
+        pointer-events: all;
+    }
+    .mobMenu-conteiner{
+        opacity: 0;
+        pointer-events: none;
+        transition: .5s;
         flex-direction: column;
         align-items: flex-start;
         position: fixed;
@@ -16,7 +23,6 @@
         bottom: 0;
         z-index: 2;
         padding: 120px 0px 0px 0px;
-        height: 100vh;
         background-color: #fff;
         .mob-hypers {
             display:flex;
