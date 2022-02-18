@@ -164,6 +164,12 @@ html {
   .nav-container .burger-menu {
     display: block;
   }
+  .nav-container .fixed-top {
+    top: 0;
+  }
+  .nav-container .fixed-bottom {
+    top: -75px;
+  }
 }
 .mainBlock-conteiner {
   display: grid;

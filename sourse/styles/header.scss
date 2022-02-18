@@ -135,6 +135,12 @@
         }
         .burger-menu{
             display: block;
-        } 
+        }
+        .fixed-top{
+            top: 0;
+          }
+          .fixed-bottom{
+            top: -75px;
+        }
     }
 }
