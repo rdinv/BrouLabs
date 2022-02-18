@@ -30,22 +30,3 @@ burgerBtn.addEventListener("click", () => {
       }
     });
   });
-
-
-
-
-  var oldScrollY = 0;
-  var nav = document.getElementsByClassName("nav-container");
-  
-  window.onscroll = function() {
-    var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-    var dY = scrolled - oldScrollY;
-    
-    if ( dY > 0 ){
-      nav.className = "fixed fixed-bottom";
-    } else {
-      nav.className = "fixed fixed-top";
-    }
-    
-    oldScrollY = scrolled;
-  };

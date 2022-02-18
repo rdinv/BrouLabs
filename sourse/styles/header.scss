@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 52px 112px 0px 100px;
-    .logo{
+   .logo{
         z-index: 3;
     }
     .div-top-hypers {
@@ -71,6 +71,9 @@
     }
 }
 @media (max-width: 960px){
+    .hide{
+        transform: translateY(-63px);
+    }
     .nav-container{
         height: auto;
         margin: 20px 23px 0px 22px;
@@ -79,6 +82,8 @@
         right: 0;
         left: 0;
         z-index: 3;
+
+        transition: transform .3s linear;
         .div-top-hypers {
             display: none;
         }
@@ -135,12 +140,6 @@
         }
         .burger-menu{
             display: block;
-        }
-        .fixed-top{
-            top: 0;
-          }
-          .fixed-bottom{
-            top: -75px;
         }
     }
 }

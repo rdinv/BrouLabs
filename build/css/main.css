@@ -98,6 +98,10 @@ html {
   }
 }
 @media (max-width: 960px) {
+  .hide {
+    transform: translateY(-63px);
+  }
+
   .nav-container {
     height: auto;
     margin: 20px 23px 0px 22px;
@@ -106,6 +110,7 @@ html {
     right: 0;
     left: 0;
     z-index: 3;
+    transition: transform 0.3s linear;
   }
   .nav-container .div-top-hypers {
     display: none;
@@ -163,12 +168,6 @@ html {
   }
   .nav-container .burger-menu {
     display: block;
-  }
-  .nav-container .fixed-top {
-    top: 0;
-  }
-  .nav-container .fixed-bottom {
-    top: -75px;
   }
 }
 .mainBlock-conteiner {
